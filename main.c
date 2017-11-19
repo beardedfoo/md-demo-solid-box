@@ -46,7 +46,6 @@ int main()
   VDP_loadTileData(TILE_SOLID, VRAM_POS_TILE_SOLID, NUM_TILES,
   	LOAD_TILE_WITH_DMA);
 
-
   // The Megadrive VDP supports two tile "plans" (PLAN_A and PLAN_B).
   // These plans define a selection of tiles in a grid of 40x28
   // visible tiles. Here we update PLAN_A to place our tile at the
