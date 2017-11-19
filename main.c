@@ -46,12 +46,13 @@ int main()
   VDP_loadTileData(TILE_SOLID, VRAM_POS_TILE_SOLID, NUM_TILES,
   	LOAD_TILE_WITH_DMA);
 
+
   // The Megadrive VDP supports two tile "plans" (PLAN_A and PLAN_B).
-	// These plans define a selection of tiles in a grid of 40x28
-	// visible tiles. Here we update PLAN_A to place our tile at the
-	// X,Y coordinates of choice. The coordinates are specefied in
-	// tile units so the valid range for the X-axis is 0-39 and the
-	// valid range for the Y-axis is 0-27.
+  // These plans define a selection of tiles in a grid of 40x28
+  // visible tiles. Here we update PLAN_A to place our tile at the
+  // X,Y coordinates of choice. The coordinates are specefied in
+  // tile units so the valid range for the X-axis is 0-39 and the
+  // valid range for the Y-axis is 0-27.
   VDP_setTileMapXY(PLAN_A, VRAM_POS_TILE_SOLID, COORD_X, COORD_Y);
 
   // The rest of the program is essentially a busy-wait loop
